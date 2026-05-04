@@ -1,0 +1,7 @@
+services:
+  bash-prompt-generator:
+    build: .
+    container_name: bash-prompt-app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
